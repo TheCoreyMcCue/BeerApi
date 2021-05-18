@@ -19,12 +19,14 @@
         </div>
       </div>
     </div>
-    <button @click="showBeer" class="btn btn-primary">Beer Randomizer</button>
+    <button @click="showBeer" class="btn btn-primary mt-2">
+      Beer Randomizer
+    </button>
   </div>
 </template>
 
 <script lang="ts">
-import { Component, Vue } from "vue-property-decorator";
+import vue from "vue-property-decorator";
 import axios from "axios";
 
 export default {
