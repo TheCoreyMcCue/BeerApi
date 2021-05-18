@@ -24,7 +24,7 @@ export default class Navbar extends Vue {}
 }
 
 #footer .icon {
-  height: 50px;
+  height: 3em;
   display: inline-block;
   padding-right: 1rem;
   /* margin-bottom: -6px; */

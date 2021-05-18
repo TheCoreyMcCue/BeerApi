@@ -1,32 +1,22 @@
 <template>
-  <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="/">
-        <img src="../assets/logo.png" alt="" width="38" height="34" />
-      </a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="/">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/#/random">Randomizer Page</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+  <b-navbar class="sticky-top" toggleable="lg" type="dark" variant="info">
+    <b-navbar-brand href="/"
+      ><img src="../assets/logo.png" alt="" width="38" height="33"
+    /></b-navbar-brand>
+
+    <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
+
+    <b-collapse id="nav-collapse" is-nav>
+      <b-navbar-nav>
+        <b-nav-item href="#/">Home</b-nav-item>
+        <b-nav-item href="#/random">Random Beer</b-nav-item>
+        <b-nav-item href="#/">Link</b-nav-item>
+      </b-navbar-nav>
+
+      <!-- Right aligned nav items -->
+      <b-navbar-nav class="ml-auto"> </b-navbar-nav>
+    </b-collapse>
+  </b-navbar>
 </template>
 
 <script>
