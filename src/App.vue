@@ -1,14 +1,21 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link> |
-      <router-link to="/random">Random</router-link>
-
-    </div>
+    <Navbar />
     <router-view />
   </div>
 </template>
+
+<script lang="ts">
+import { Component, Vue } from "vue-property-decorator";
+import Navbar from "@/components/Navbar.vue"; // @ is an alias to /src
+
+@Component({
+  components: {
+    Navbar,
+  },
+})
+export default class App extends Vue {}
+</script>
 
 <style>
 #app {
