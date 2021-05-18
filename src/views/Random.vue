@@ -19,7 +19,7 @@
         </div>
       </div>
     </div>
-    <button @click="showBeer" class="btn btn-primary mt-2">
+    <button @click="showBeer" class="btn btn-primary mt-3">
       Beer Randomizer
     </button>
   </div>

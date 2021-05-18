@@ -3,6 +3,7 @@
     <div class="hr"></div>
     <div class="container">
       <p>
+        <img class="icon" src="../assets/logo.png" />
         <span>
           <strong>Vuebnb</strong>. A full-stack Vue.js and Laravel demo app
         </span>
@@ -23,9 +24,10 @@ export default class Navbar extends Vue {}
 }
 
 #footer .icon {
-  height: 23px;
+  height: 50px;
   display: inline-block;
-  margin-bottom: -6px;
+  padding-right: 1rem;
+  /* margin-bottom: -6px; */
 }
 
 .hr {
