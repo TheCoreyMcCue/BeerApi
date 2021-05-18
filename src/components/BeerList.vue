@@ -1,19 +1,24 @@
 <template>
   <div class="BeerList">
     <h1>List of Beers</h1>
-    <div>
-      <table border="1px">
-        <tr>
-          <td>Name</td>
-          <td>ABV</td>
-          <td>Date</td>
-        </tr>
-        <tr v-for="index in 10" :key="index">
-          <td>{{ beers[index].name }}</td>
-          <td>{{ beers[index].abv }}</td>
-          <td>{{ beers[index].first_brewed }}</td>
-        </tr>
-      </table>
+    <div class="container">
+      <div v-for="index in 10" :key="index" class="card-group d-flex">
+        <div class="card mb-2 py-2">
+          <img
+            :src="beers[index].image_url"
+            id="beer-img"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">{{ beers[index].name }}</h5>
+            <p class="card-text">
+              <small class="text-muted">ABV {{ beers[index].abv }}%</small>
+            </p>
+            <p class="card-text">{{ beers[index].description }}</p>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -31,8 +36,16 @@ export default {
   mounted() {
     Vue.axios.get("https://api.punkapi.com/v2/beers").then((response) => {
       this.beers = response.data;
-      console.log(response.data);
+      this.url = "/beer/";
     });
   },
 };
 </script>
+
+<style scoped>
+#beer-img {
+  max-height: 38vh;
+  width: auto;
+  object-fit: contain;
+}
+</style>
