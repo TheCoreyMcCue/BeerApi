@@ -51,18 +51,6 @@ export default {
       );
       this.beer = beer.data[0];
     },
-    async showBeer2() {
-      let config = {
-        headers: {
-          Accept: "application/json",
-        },
-      };
-      const beer = await axios.get(
-        "https://api.punkapi.com/v2/beers/1",
-        config
-      );
-      return (this.beer2 = beer.data[0]);
-    },
   },
 };
 </script>

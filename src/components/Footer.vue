@@ -4,7 +4,7 @@
     <div class="container">
       <div class="d-flex justify-content-center footer-links">
         <a class="footer-link" href="/">home</a>
-        <a class="footer-link" href="/random">randomizer</a>
+        <a class="footer-link" href="/#/random">randomizer</a>
       </div>
       <p>
         <img class="icon" src="../assets/logo.png" />

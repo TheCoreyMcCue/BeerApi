@@ -1,8 +1,9 @@
 <template>
   <b-navbar class="sticky-top" toggleable="lg" type="dark" variant="info">
     <b-navbar-brand href="/"
-      ><img src="../assets/logo.png" alt="" width="38" height="33"
-    /></b-navbar-brand>
+      ><img src="../assets/logo.png" alt="" width="38" height="33" /> Beer
+      Me</b-navbar-brand
+    >
 
     <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
@@ -20,7 +21,7 @@
 </template>
 
 <script>
-import { Component, Prop, Vue } from "vue-property-decorator";
+import { Component, Vue } from "vue-property-decorator";
 
 @Component
 export default class Navbar extends Vue {}
