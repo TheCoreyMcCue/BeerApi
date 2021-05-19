@@ -8,18 +8,18 @@
           :src="beer.image_url"
           alt=""
           id="beer-img"
-          class="card-img-top"
+          class="card-img-top pt-2"
         />
         <div class="card-body">
           <h5 class="card-title">{{ beer.name }}</h5>
           <p class="text-muted">ABV: {{ beer.abv }}%</p>
           <p class="card-text">
-            {{ beer.description.substring(0, 170) + ".." }}
+            {{ beer.description.substring(0, 120) + ".." }}
           </p>
         </div>
       </div>
     </div>
-    <button @click="showBeer" class="btn btn-primary mt-2">
+    <button @click="showBeer" class="btn btn-primary mt-3">
       Beer Randomizer
     </button>
   </div>

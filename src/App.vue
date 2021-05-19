@@ -1,17 +1,22 @@
 <template>
   <div id="app">
-    <Navbar />
-    <router-view />
+    <div class="main">
+      <Navbar />
+      <router-view />
+    </div>
+    <Footer />
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
 import Navbar from "@/components/Navbar.vue"; // @ is an alias to /src
+import Footer from "@/components/Footer.vue"; // @ is an alias to /src
 
 @Component({
   components: {
     Navbar,
+    Footer,
   },
 })
 export default class App extends Vue {}
@@ -24,6 +29,10 @@ export default class App extends Vue {}
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+}
+
+.main {
+  min-height: 80vh;
 }
 
 #nav {
