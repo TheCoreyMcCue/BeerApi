@@ -2,10 +2,15 @@
   <div id="footer" class="container">
     <div class="hr"></div>
     <div class="container">
+      <div class="d-flex justify-content-center footer-links">
+        <a class="footer-link" href="/">home</a>
+        <a class="footer-link" href="/random">randomizer</a>
+      </div>
       <p>
         <img class="icon" src="../assets/logo.png" />
         <span>
-          <strong>Vuebnb</strong>. A full-stack Vue.js and Laravel demo app
+          <strong>&copy; Beer Me</strong>. A full-stack Vue.js demo app by Corey
+          McCue
         </span>
       </p>
     </div>
@@ -38,5 +43,12 @@ export default class Navbar extends Vue {}
 #footer p {
   font-size: 15px;
   color: #767676 !important;
+}
+
+.footer-link {
+  margin-inline: 8%;
+}
+.footer-links {
+  margin-bottom: 3%;
 }
 </style>

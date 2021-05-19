@@ -4,12 +4,14 @@
     <div class="container">
       <div v-for="index in 10" :key="index" class="card-group d-flex">
         <div class="card mb-2 py-2">
-          <img
-            :src="beers[index].image_url"
-            id="beer-img"
-            class="card-img-top"
-            alt="..."
-          />
+          <a v-bind:href="'#/beers/' + beers[index].id">
+            <img
+              :src="beers[index].image_url"
+              id="beer-img"
+              class="card-img-top"
+              alt="..."
+            />
+          </a>
           <div class="card-body">
             <h5 class="card-title">{{ beers[index].name }}</h5>
             <p class="card-text">
