@@ -32,7 +32,7 @@ export default class App extends Vue {}
 }
 
 .main {
-  min-height: 80vh;
+  min-height: 75vh;
 }
 
 #nav {

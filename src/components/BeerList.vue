@@ -4,7 +4,7 @@
     <div class="container">
       <div v-for="index in 10" :key="index" class="card-group d-flex">
         <div class="card mb-2 py-2">
-          <a v-bind:href="'#/beers/' + beers[index].id">
+          <a v-bind:href="'#/beer/' + beers[index].id">
             <img
               :src="beers[index].image_url"
               id="beer-img"
