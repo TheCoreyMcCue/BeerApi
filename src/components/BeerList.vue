@@ -1,6 +1,6 @@
 <template>
   <div class="BeerList">
-    <h1>List of Beers</h1>
+    <h1>Our top 10 Beers</h1>
     <div class="container">
       <div v-for="index in 10" :key="index" class="card-group d-flex">
         <div class="card mb-2 py-2">
@@ -45,6 +45,19 @@ export default {
 </script>
 
 <style scoped>
+.BeerList {
+  background-image: url("https://images.unsplash.com/photo-1505075106905-fb052892c116?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2850&q=80");
+}
+
+h1 {
+  color: white;
+  border-bottom: 1px solid white;
+}
+
+.card {
+  max-height: 50%;
+}
+
 #beer-img {
   max-height: 38vh;
   width: auto;

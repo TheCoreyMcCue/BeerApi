@@ -1,14 +1,20 @@
 <template>
-  <div class="beer">
+  <div class="Beer">
     <h1>Random beer</h1>
     <div class="container d-flex justify-content-center">
       <div class="card" style="width: 15rem" v-if="beer">
         <img
           v-if="beer.image_url"
           :src="beer.image_url"
-          alt=""
+          alt="picture of selected beer"
           id="beer-img"
           class="card-img-top pt-2"
+        />
+        <img
+          v-else
+          src="../assets/logo.png"
+          class="card-img-top pt-2 px-2 alt-img"
+          alt=""
         />
         <div class="card-body">
           <h5 class="card-title">{{ beer.name }}</h5>
@@ -26,6 +32,7 @@
 <script lang="ts">
 import vue from "vue-property-decorator";
 import axios from "axios";
+// import logo from "../assets/logo.png";
 
 export default {
   name: "Test",
@@ -53,11 +60,24 @@ export default {
 </script>
 
 <style scoped>
+.Beer {
+  min-height: 100vh;
+  background-image: url("https://images.unsplash.com/photo-1505075106905-fb052892c116?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2850&q=80");
+}
+
+h1 {
+  color: white;
+}
+
 #beer-img {
   max-height: 38vh;
   width: auto;
   object-fit: contain;
 }
+/* .alt-img {
+  height: 20%;
+  width: 20%;
+} */
 .card {
   max-height: 80vh;
 }
@@ -66,6 +86,6 @@ export default {
   /* white-space: nowrap; */
   overflow: hidden;
   text-overflow: ellipsis;
-  max-width: 100ch;
+  max-width: 100vh;
 }
 </style>

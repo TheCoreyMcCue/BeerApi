@@ -1,8 +1,13 @@
 <template>
-  <b-navbar class="sticky-top" toggleable="lg" type="dark" variant="info">
+  <b-navbar
+    class="sticky-top bg-dark"
+    toggleable="lg"
+    type="dark"
+    variant="info"
+  >
     <b-navbar-brand href="/"
-      ><img src="../assets/logo.png" alt="" width="38" height="33" /> Beer
-      Me</b-navbar-brand
+      ><img src="../assets/logo.png" alt="" width="38" height="33" />
+      BeerMe</b-navbar-brand
     >
 
     <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
@@ -11,7 +16,7 @@
       <b-navbar-nav>
         <b-nav-item href="#/">Home</b-nav-item>
         <b-nav-item href="#/random">Random Beer</b-nav-item>
-        <b-nav-item href="#/">Link</b-nav-item>
+        <b-nav-item href="#/about">About</b-nav-item>
       </b-navbar-nav>
 
       <!-- Right aligned nav items -->
