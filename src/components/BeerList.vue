@@ -2,8 +2,8 @@
   <div class="BeerList">
     <h1>Our top 10 Beers</h1>
     <div class="container">
-      <div v-for="index in 10" :key="index" class="card-group d-flex">
-        <div class="card mb-2 py-2">
+      <div v-for="index in 10" :key="index" class="card-group">
+        <div class="card mb-2 py-2 d-flex">
           <a v-bind:href="'#/beer/' + beers[index].id">
             <img
               :src="beers[index].image_url"
@@ -55,7 +55,9 @@ h1 {
 }
 
 .card {
-  max-height: 50%;
+  /* max-height: 10%; */
+  background-color: #dda15e;
+  /* max-width: 40%; */
 }
 
 #beer-img {
