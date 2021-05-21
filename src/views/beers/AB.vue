@@ -1,19 +1,22 @@
 <template>
   <div class="AB beer-show">
     <div class="container d-flex">
-      <div class="row mt-5 justify-content-around">
+      <div class="row justify-content-around">
         <!-- <img :src="beer.image_url" id="beer-img" alt="" /> -->
         <div class="col-6">
-          <h1>{{ beer.name }}</h1>
+          <h1 class="beer-name"><i class="fas fa-beer"></i> {{ beer.name }}</h1>
           <h3>{{ beer.tagline }}</h3>
+          <h6>First Brewed: {{ beer.first_brewed }}</h6>
           <p>{{ beer.description }}</p>
           <h5 class="pb-3">
-            <strong class="percentage"> Alcohol Percentage: </strong>
+            <strong class="percentage">
+              <i class="fas fa-percent"></i> Alcohol Percentage:
+            </strong>
             {{ beer.abv }}%
           </h5>
           <h5 class="pt-4">
             <i class="fas fa-utensils"></i>
-            <strong class="percentage">Pairs well with: </strong>
+            <strong class="percentage"> Pairs well with: </strong>
             {{ beer.food_pairing[0] }}<br />
           </h5>
         </div>
@@ -46,6 +49,7 @@ export default {
 h1,
 h3,
 h5,
+h6,
 p {
   color: white;
 }
@@ -53,9 +57,18 @@ p {
   font-weight: bold;
 }
 
+.beer-name {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
 h1,
 h3 {
   font-weight: bold;
+}
+
+.row {
+  margin-top: 15%;
 }
 
 #beer-img {
