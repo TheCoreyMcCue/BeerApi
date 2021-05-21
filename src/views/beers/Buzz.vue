@@ -2,7 +2,7 @@
   <div class="AB beer-show">
     <div class="container d-flex">
       <a href="/" id="arrow"><i class="fas fa-arrow-left"></i> </a>
-      <div class="row justify-content-around">
+      <div class="row justify-content-center">
         <!-- <img :src="beer.image_url" id="beer-img" alt="" /> -->
         <div class="col-6 content">
           <h1 class="beer-name">
@@ -34,12 +34,12 @@ import axios from "axios";
 import VueAxios from "vue-axios";
 Vue.use(VueAxios, axios);
 export default {
-  name: "Electric",
+  name: "Buzz",
   data() {
     return { beer: undefined };
   },
   mounted() {
-    Vue.axios.get("https://api.punkapi.com/v2/beers/6").then((response) => {
+    Vue.axios.get("https://api.punkapi.com/v2/beers/1").then((response) => {
       this.beer = response.data[0];
       console.log(this.beer);
       this.url = "/beer/";
@@ -56,19 +56,13 @@ h6,
 p {
   color: white;
 }
+.percentage {
+  font-weight: bold;
+}
 
 .content {
   min-width: 80vw;
   padding-bottom: 5%;
-}
-
-#arrow {
-  color: white;
-  font-size: 1.5rem;
-  padding-top: 7%;
-}
-.percentage {
-  font-weight: bold;
 }
 
 .beer-name {
@@ -100,11 +94,16 @@ h3 {
     url("https://images.unsplash.com/photo-1600366060302-9fb7682b062b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80");
 }
 
-#arrow:hover {
+.icons {
   color: #dda15e;
 }
 
-.icons {
+#arrow {
+  color: white;
+  font-size: 1.5rem;
+  padding-top: 7%;
+}
+#arrow:hover {
   color: #dda15e;
 }
 </style>
