@@ -19,9 +19,7 @@
         </div>
       </div>
     </div>
-    <button @click="showBeer" class="btn btn-primary mt-3">
-      Beer Randomizer
-    </button>
+    <button @click="showBeer" class="btn btn-info mt-3">Beer Randomizer</button>
   </div>
 </template>
 
@@ -35,7 +33,6 @@ export default {
   data() {
     return {
       beer: "",
-      beer2: "",
     };
   },
   methods: {
