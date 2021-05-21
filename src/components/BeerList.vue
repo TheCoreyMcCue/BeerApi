@@ -1,5 +1,5 @@
 <template>
-  <div class="BeerList">
+  <div class="BeerList pb-4">
     <h1 class="pt-3">Our top 10 Beers</h1>
     <div class="container">
       <div v-for="index in 10" :key="index" class="card-group">

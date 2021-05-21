@@ -80,7 +80,8 @@ h1 {
 .card {
   max-height: 80vh;
   background-color: #dda15e;
-  width: 50%;
+  min-width: 50%;
+  margin-top: 5%;
 }
 .card-text {
   /* display:inline-block; */
@@ -92,10 +93,10 @@ h1 {
 
 #arrow {
   color: white;
-  font-size: 2rem;
-  padding-top: 7%;
+  font-size: 1.5rem;
+  padding-top: 8%;
   position: absolute;
-  left: 15%;
+  left: 10%;
 }
 #arrow:hover {
   color: #dda15e;

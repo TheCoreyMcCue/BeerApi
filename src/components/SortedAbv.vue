@@ -1,5 +1,5 @@
 <template>
-  <div class="SortedAbv">
+  <div class="SortedAbv pb-4">
     <h1 class="pt-3">Our top 10 Beers (sorted by ABV)</h1>
     <div class="container">
       <div v-for="item in beersSorted" :key="item" class="card-group d-flex">
