@@ -1,14 +1,26 @@
 <template>
   <div class="AB beer-show">
-    <div class="container">
-      <h1>{{ beer.name }}</h1>
-      <h3>{{ beer.tagline }}</h3>
-      <p>{{ beer.description }}</p>
-      <h5 class="percentage pb-3">
-        <strong> Alcohol Percentage: {{ beer.abv }}%</strong>
-      </h5>
-      <img :src="beer.image_url" id="beer-img" alt="" />
-      <h5 class="pt-4">Pairs well with: {{ beer.food_pairing[0] }}<br /></h5>
+    <div class="container d-flex">
+      <div class="row justify-content-around">
+        <!-- <img :src="beer.image_url" id="beer-img" alt="" /> -->
+        <div class="col-6">
+          <h1 class="beer-name"><i class="fas fa-beer"></i> {{ beer.name }}</h1>
+          <h3>{{ beer.tagline }}</h3>
+          <h6>First Brewed: {{ beer.first_brewed }}</h6>
+          <p>{{ beer.description }}</p>
+          <h5 class="pb-3">
+            <strong class="percentage">
+              <i class="fas fa-percent"></i> Alcohol Percentage:
+            </strong>
+            {{ beer.abv }}%
+          </h5>
+          <h5 class="pt-4">
+            <i class="fas fa-utensils"></i>
+            <strong class="percentage"> Pairs well with: </strong>
+            {{ beer.food_pairing[0] }}<br />
+          </h5>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -37,24 +49,30 @@ export default {
 h1,
 h3,
 h5,
+h6,
 p {
   color: white;
 }
 .percentage {
-  /* text-align: left; */
+  font-weight: bold;
 }
 
-.card {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-top: -50px;
-  margin-left: -135px;
-  width: 100px;
-  height: 100px;
+.beer-name {
+  text-align: center;
+  margin-bottom: 2rem;
 }
+
+h1,
+h3 {
+  font-weight: bold;
+}
+
+.row {
+  margin-top: 15%;
+}
+
 #beer-img {
-  max-height: 38vh;
+  max-height: 45vh;
   width: auto;
   object-fit: contain;
 }
@@ -64,6 +82,7 @@ p {
   background-size: cover;
   background-position: center;
   background-color: #344d5b;
-  /* background-image: url("https://images.unsplash.com/photo-1600366060302-9fb7682b062b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80"); */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("https://images.unsplash.com/photo-1600366060302-9fb7682b062b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80");
 }
 </style>

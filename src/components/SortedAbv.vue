@@ -60,6 +60,7 @@ h1 {
 
 .card {
   max-height: 50%;
+  background-color: #dda15e;
 }
 
 #beer-img {
