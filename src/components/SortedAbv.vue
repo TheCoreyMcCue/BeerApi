@@ -1,6 +1,6 @@
 <template>
   <div class="SortedAbv">
-    <h1>Our top 10 Beers (sorted by ABV)</h1>
+    <h1 class="pt-3">Our top 10 Beers (sorted by ABV)</h1>
     <div class="container">
       <div v-for="item in beersSorted" :key="item" class="card-group d-flex">
         <div class="card mb-2 py-2">
@@ -61,6 +61,10 @@ h1 {
 .card {
   max-height: 50%;
   background-color: #dda15e;
+}
+
+.card-title {
+  font-weight: bold;
 }
 
 #beer-img {

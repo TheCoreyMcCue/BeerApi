@@ -1,6 +1,6 @@
 <template>
   <div class="BeerList">
-    <h1>Our top 10 Beers</h1>
+    <h1 class="pt-3">Our top 10 Beers</h1>
     <div class="container">
       <div v-for="index in 10" :key="index" class="card-group">
         <div class="card mb-2 py-2 d-flex">
@@ -58,6 +58,10 @@ h1 {
   /* max-height: 10%; */
   background-color: #dda15e;
   /* max-width: 40%; */
+}
+
+.card-title {
+  font-weight: bold;
 }
 
 #beer-img {

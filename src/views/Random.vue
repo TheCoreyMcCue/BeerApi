@@ -1,8 +1,9 @@
 <template>
   <div class="Beer">
+    <a href="/" id="arrow"><i class="fas fa-arrow-left"></i> </a>
     <h1>Random beer</h1>
     <div class="container d-flex justify-content-center">
-      <div class="card" style="width: 15rem" v-if="beer">
+      <div class="card" v-if="beer">
         <img
           v-if="beer.image_url"
           :src="beer.image_url"
@@ -12,6 +13,7 @@
         />
         <img
           v-else
+          id="beer-img"
           src="../assets/logo.png"
           class="card-img-top pt-2 px-2 alt-img"
           alt=""
@@ -74,12 +76,11 @@ h1 {
   width: auto;
   object-fit: contain;
 }
-/* .alt-img {
-  height: 20%;
-  width: 20%;
-} */
+
 .card {
   max-height: 80vh;
+  background-color: #dda15e;
+  width: 50%;
 }
 .card-text {
   /* display:inline-block; */
@@ -87,5 +88,16 @@ h1 {
   overflow: hidden;
   text-overflow: ellipsis;
   max-width: 100vh;
+}
+
+#arrow {
+  color: white;
+  font-size: 2rem;
+  padding-top: 7%;
+  position: absolute;
+  left: 15%;
+}
+#arrow:hover {
+  color: #dda15e;
 }
 </style>
