@@ -5,7 +5,7 @@
         <h1>
           <strong>BeerMe</strong>
         </h1>
-        <p>The only online beer site you'll ever need.</p>
+        <p>Craft Beer For The People</p>
         <a @click="sorted = !sorted" class="btn btn-info" href="#"
           >Sort Beers by ABV %</a
         >
@@ -45,19 +45,20 @@ export default {
     url("https://images.unsplash.com/photo-1589711428920-bf084b80e0bd?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2850&q=80");
   background-size: cover;
   background-position: center;
-  padding: 150px 0;
+  padding: 8%;
+  margin-bottom: 0.1%;
 }
 
 .banner h1 {
   margin: 0;
   color: white;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
-  font-size: 32px;
+  font-size: 1.5;
   font-weight: bold;
 }
 
 .banner p {
-  font-size: 20px;
+  font-size: 1rem;
   color: white;
   opacity: 0.85;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
