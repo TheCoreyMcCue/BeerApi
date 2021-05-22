@@ -1,7 +1,7 @@
 <template>
   <div class="Beer">
     <a href="/" id="arrow"><i class="fas fa-arrow-left"></i> </a>
-    <h1>Random beer</h1>
+    <h1>Learn about a random beer</h1>
     <div class="container d-flex justify-content-center">
       <div class="card" v-if="beer">
         <img
