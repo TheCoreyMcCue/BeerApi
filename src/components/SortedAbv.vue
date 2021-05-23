@@ -41,7 +41,6 @@ export default {
       this.beersSorted = response.data.slice(0, 10).sort((a, b) => {
         return a.abv - b.abv;
       });
-      console.log(this.beersSorted);
       this.url = "/beer/";
     });
   },
