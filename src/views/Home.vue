@@ -32,11 +32,6 @@ export default {
       sorted: false,
     };
   },
-  methods: {
-    doStuff() {
-      return (this.sorted = true);
-    },
-  },
 };
 </script>
 <style scoped>

@@ -32,16 +32,14 @@
 </template>
 
 <script lang="ts">
-import vue from "vue-property-decorator";
 import axios from "axios";
-// import logo from "../assets/logo.png";
 
 export default {
-  name: "Test",
+  name: "Random",
   props: {},
   data() {
     return {
-      beer: "",
+      beer: null,
     };
   },
   methods: {
@@ -51,7 +49,7 @@ export default {
           Accept: "application/json",
         },
       };
-      const beer = await axios.get(
+      let beer = await axios.get(
         "https://api.punkapi.com/v2/beers/random",
         config
       );
