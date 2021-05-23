@@ -1,5 +1,5 @@
 <template>
-  <div class="Beer">
+  <div class="Beer pb-3">
     <a href="/" id="arrow"><i class="fas fa-arrow-left"></i> </a>
     <h1>Learn about a random beer</h1>
     <div class="container d-flex justify-content-center">

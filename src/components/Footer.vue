@@ -4,14 +4,14 @@
     <div class="container">
       <div class="d-flex justify-content-center footer-links">
         <a class="footer-link" href="/">home</a>
-        <a class="footer-link" href="/#/random">randomizer</a>
+        <a class="footer-link" href="/#/random">random beer</a>
         <a class="footer-link" href="/#/about">about</a>
       </div>
       <p>
         <img class="icon" src="../assets/logo.png" />
         <span>
-          <strong>&copy; Beer Me</strong>. A full-stack Vue.js demo app by Corey
-          McCue
+          <strong>&copy; 2021 BeerMe</strong>. A full-stack Vue.js demo app by
+          Corey McCue
         </span>
       </p>
     </div>

@@ -5,7 +5,7 @@
     type="dark"
     variant="info"
   >
-    <b-navbar-brand href="/"
+    <b-navbar-brand href="/" class="nav-brand"
       ><img src="../assets/logo.png" alt="" width="38" height="33" />
       BeerMe</b-navbar-brand
     >
@@ -14,9 +14,9 @@
 
     <b-collapse id="nav-collapse" is-nav>
       <b-navbar-nav>
-        <b-nav-item href="#/">Home</b-nav-item>
-        <b-nav-item href="#/random">Random Beer</b-nav-item>
-        <b-nav-item href="#/about">About</b-nav-item>
+        <b-nav-item class="nav-link" href="#/">Home</b-nav-item>
+        <b-nav-item class="nav-link" href="#/random">Random Beer</b-nav-item>
+        <b-nav-item class="nav-link" href="#/about">About</b-nav-item>
       </b-navbar-nav>
 
       <!-- Right aligned nav items -->
