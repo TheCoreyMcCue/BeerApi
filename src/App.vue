@@ -41,7 +41,8 @@ h5,
 h6 {
   font-family: "Source Sans Pro", sans-serif;
 }
-p {
+p,
+a {
   font-family: "Poppins", sans-serif;
 }
 
@@ -49,16 +50,10 @@ p {
   min-height: 75vh;
 }
 
-#nav {
-  padding: 30px;
+.nav-brand {
+  font-family: "Pattaya", sans-serif;
 }
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
+.nav-link {
+  font-family: "Poppins", sans-serif;
 }
 </style>

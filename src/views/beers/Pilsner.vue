@@ -8,7 +8,7 @@
             <i class="fas fa-beer icons"></i> {{ beer.name }}
           </h1>
           <h3>{{ beer.tagline }}</h3>
-          <h6>First Brewed: {{ beer.first_brewed }}</h6>
+          <h6><strong> First Brewed: </strong> {{ beer.first_brewed }}</h6>
           <p>{{ beer.description }}</p>
           <h5 class="pb-3">
             <strong class="percentage">

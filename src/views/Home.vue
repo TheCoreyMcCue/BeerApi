@@ -52,7 +52,7 @@ export default {
 .banner h1 {
   margin: 0;
   color: white;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.9);
   font-size: 1.5;
   font-weight: bold;
 }
