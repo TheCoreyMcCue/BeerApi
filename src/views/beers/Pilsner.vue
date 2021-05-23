@@ -40,8 +40,6 @@ export default {
   mounted() {
     Vue.axios.get("https://api.punkapi.com/v2/beers/4").then((response) => {
       this.beer = response.data[0];
-      console.log(this.beer);
-      this.url = "/beer/";
     });
   },
 };

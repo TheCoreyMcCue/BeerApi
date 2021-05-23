@@ -3,7 +3,6 @@
     <div class="container d-flex">
       <a href="/" id="arrow"><i class="fas fa-arrow-left"></i> </a>
       <div class="row justify-content-around">
-        <!-- <img :src="beer.image_url" id="beer-img" alt="" /> -->
         <div class="col-6 content">
           <h1 class="beer-name">
             <i class="fas fa-beer icons"></i> {{ beer.name }}
@@ -41,8 +40,6 @@ export default {
   mounted() {
     Vue.axios.get("https://api.punkapi.com/v2/beers/8").then((response) => {
       this.beer = response.data[0];
-      console.log(this.beer);
-      this.url = "/beer/";
     });
   },
 };

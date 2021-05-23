@@ -16,7 +16,6 @@
   </div>
 </template>
 <script lang="ts">
-import { Component, Vue } from "vue-property-decorator";
 import BeerList from "../components/BeerList.vue";
 import SortedAbv from "../components/SortedAbv.vue";
 

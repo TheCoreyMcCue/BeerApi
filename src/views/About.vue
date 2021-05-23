@@ -16,12 +16,10 @@
             irony godard echo park iceland. Health goth cornhole ennui pug
             franzen freegan bitters swag distillery direct trade. Forage
             church-key tofu vape fingerstache migas roof party authentic. Man
-            braid asymmetrical street art, williamsburg migas quinoa venmo
-            scenester blue bottle fanny pack snackwave kombucha locavore
-            truffaut cray.
+            braid asymmetrical street art.
           </p>
         </div>
-        <div class="col-lg-8">
+        <div class="col-lg-8 pb-3">
           <img
             src="https://images.unsplash.com/photo-1532634733-cae1395e440f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2850&q=80"
             alt=""

@@ -16,6 +16,7 @@
       <b-navbar-nav>
         <b-nav-item class="nav-link" href="#/">Home</b-nav-item>
         <b-nav-item class="nav-link" href="#/random">Random Beer</b-nav-item>
+        <b-nav-item class="nav-link" href="#/">Categories</b-nav-item>
         <b-nav-item class="nav-link" href="#/about">About</b-nav-item>
       </b-navbar-nav>
 
